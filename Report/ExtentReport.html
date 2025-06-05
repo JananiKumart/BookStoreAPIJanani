@@ -1,0 +1,3438 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jun 5, 2025 05:12:00 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">add New book</p>
+            <p class="text-sm">
+              <span>5:12:00 pm</span> / <span>00:00:00:006</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">add New book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:00 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:00 pm</span>
+<span class='badge badge-default'>00:00:00:006</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:00 pm</td>
+        <td>
+          Prepared book Record payload: [{book_summary=Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace., published_year=2025, bookName=Book Title Soldiers Story, author=Book Author Norman}]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register book store with new MobileNumber and email</p>
+            <p class="text-sm">
+              <span>5:12:00 pm</span> / <span>00:00:00:014</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register book store with new MobileNumber and email</h5>
+<span class='badge badge-success'>06.05.2025 5:12:00 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:00 pm</span>
+<span class='badge badge-default'>00:00:00:014</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:00 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=janani237@yahoo.com, password=1EV34VK9MRMRK3B, Username=null, MobileNumber=6123456789, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether a new user is created with response code and response message</p>
+            <p class="text-sm">
+              <span>5:12:03 pm</span> / <span>00:00:02:564</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether a new user is created with response code and response message</h5>
+<span class='badge badge-success'>06.05.2025 5:12:03 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:06 pm</span>
+<span class='badge badge-default'>00:00:02:564</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:06 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:06 pm</td>
+        <td>
+          Actual Message: User created successfully Expected Message : User created successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user tries to login to the bookStore</p>
+            <p class="text-sm">
+              <span>5:12:06 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user tries to login to the bookStore</h5>
+<span class='badge badge-success'>06.05.2025 5:12:06 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:06 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether the user has logged in successfully with the response code</p>
+            <p class="text-sm">
+              <span>5:12:06 pm</span> / <span>00:00:00:219</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether the user has logged in successfully with the response code</h5>
+<span class='badge badge-success'>06.05.2025 5:12:06 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:06 pm</span>
+<span class='badge badge-default'>00:00:00:219</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:06 pm</td>
+        <td>
+          Token found in response: j4h167963517675385
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:06 pm</td>
+        <td>
+          Token type found in response: Cloud
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify whether the book is created</p>
+            <p class="text-sm">
+              <span>5:12:06 pm</span> / <span>00:00:00:438</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verify whether the book is created</h5>
+<span class='badge badge-success'>06.05.2025 5:12:06 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:07 pm</span>
+<span class='badge badge-default'>00:00:00:438</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:06 pm</td>
+        <td>
+          Id found in response: 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:06 pm</td>
+        <td>
+          Actual book Name: Book Title Soldiers Story Expected Book Name : Book Title Soldiers Story
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:06 pm</td>
+        <td>
+          Actual author Name: Book Author Norman Expected author Name : Book Author Norman
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual published_year Name: 2025 Expected published_year Name : 2025
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual book_summary Name: Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace. Expected book_summary Name : Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Edit the book</p>
+            <p class="text-sm">
+              <span>5:12:07 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Edit the book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:07 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:07 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Prepared Edit book Record payload: {createdBookId=1, book_summary=Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace., published_year=2025, author=Book Author Norman, bookName=Book name is Modern Theory}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifies whether the response</p>
+            <p class="text-sm">
+              <span>5:12:07 pm</span> / <span>00:00:00:004</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifies whether the response</h5>
+<span class='badge badge-success'>06.05.2025 5:12:07 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:07 pm</span>
+<span class='badge badge-default'>00:00:00:004</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual Status Line: HTTP/1.1 200 OK Expected Status Line : HTTP/1.1 200 OK
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify the edited book details values in response</p>
+            <p class="text-sm">
+              <span>5:12:07 pm</span> / <span>00:00:00:729</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verify the edited book details values in response</h5>
+<span class='badge badge-success'>06.05.2025 5:12:07 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:07 pm</span>
+<span class='badge badge-default'>00:00:00:729</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual book Name: Book name is Modern Theory Expected Book Name : Book name is Modern Theory
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual author Name: Book Author Norman Expected author Name : Book Author Norman
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual published_year Name: 2025 Expected published_year Name : 2025
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual book_summary Name: Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace. Expected book_summary Name : Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual id Name: 1 Expected id Name : 1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify the response success</p>
+            <p class="text-sm">
+              <span>5:12:07 pm</span> / <span>00:00:00:270</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify the response success</h5>
+<span class='badge badge-success'>06.05.2025 5:12:07 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-default'>00:00:00:270</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual book Name: Book name is Modern Theory Expected Book Name : Book name is Modern Theory
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual author Name: Book Author Norman Expected author Name : Book Author Norman
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:07 pm</td>
+        <td>
+          Actual published_year Name: 2025 Expected published_year Name : 2025
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual book_summary Name: Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace. Expected book_summary Name : Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual id Name: 1 Expected id Name : 1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify the response after deleting the book</p>
+            <p class="text-sm">
+              <span>5:12:08 pm</span> / <span>00:00:00:026</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verify the response after deleting the book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-default'>00:00:00:026</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual Status Line: HTTP/1.1 200 OK Expected Status Line : HTTP/1.1 200 OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual error message: Book deleted successfully Expected error message: Book deleted successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify the response after deleting the book</p>
+            <p class="text-sm">
+              <span>5:12:08 pm</span> / <span>00:00:00:027</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verify the response after deleting the book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-default'>00:00:00:027</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual Status code: 404 Expected Status code : 404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual Status Line: HTTP/1.1 404 Not Found Expected Status Line : HTTP/1.1 404 Not Found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual error message: Book not found Expected error message: Book not found
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">add New book</p>
+            <p class="text-sm">
+              <span>5:12:08 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">add New book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Prepared book Record payload: [{book_summary=Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace., published_year=2025, bookName=Book Title Soldiers Story, author=Book Author Norman}]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register book store with new MobileNumber and email</p>
+            <p class="text-sm">
+              <span>5:12:08 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register book store with new MobileNumber and email</h5>
+<span class='badge badge-success'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=janani237@yahoo.com, password=LGXZ8DJ891TDSVV, Username=null, MobileNumber=6123456789, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether a new user is created with response code and response message</p>
+            <p class="text-sm">
+              <span>5:12:08 pm</span> / <span>00:00:00:046</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether a new user is created with response code and response message</h5>
+<span class='badge badge-success'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-default'>00:00:00:046</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual Message: User created successfully Expected Message : User created successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user tries to login to the bookStore</p>
+            <p class="text-sm">
+              <span>5:12:08 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user tries to login to the bookStore</h5>
+<span class='badge badge-success'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether the user has logged in successfully with the response code</p>
+            <p class="text-sm">
+              <span>5:12:08 pm</span> / <span>00:00:00:092</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether the user has logged in successfully with the response code</h5>
+<span class='badge badge-success'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-default'>00:00:00:092</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Token found in response: j4h167963517675385
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Token type found in response: Cloud
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify whether the book is created</p>
+            <p class="text-sm">
+              <span>5:12:08 pm</span> / <span>00:00:00:315</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verify whether the book is created</h5>
+<span class='badge badge-success'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-default'>00:00:00:315</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Id found in response: 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual book Name: Book Title Soldiers Story Expected Book Name : Book Title Soldiers Story
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual author Name: Book Author Norman Expected author Name : Book Author Norman
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual published_year Name: 2025 Expected published_year Name : 2025
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Actual book_summary Name: Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace. Expected book_summary Name : Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Edit the book</p>
+            <p class="text-sm">
+              <span>5:12:08 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Edit the book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:08 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:08 pm</td>
+        <td>
+          Prepared Edit book Record payload: {createdBookId=1, book_summary=Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace., published_year=2025, author=Book Author Norman, bookName=Book name is Modern Theory}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifies whether the response</p>
+            <p class="text-sm">
+              <span>5:12:09 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifies whether the response</h5>
+<span class='badge badge-success'>06.05.2025 5:12:09 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:09 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual Status Line: HTTP/1.1 200 OK Expected Status Line : HTTP/1.1 200 OK
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify the edited book details values in response</p>
+            <p class="text-sm">
+              <span>5:12:09 pm</span> / <span>00:00:00:335</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verify the edited book details values in response</h5>
+<span class='badge badge-success'>06.05.2025 5:12:09 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:09 pm</span>
+<span class='badge badge-default'>00:00:00:335</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual book Name: Book name is Modern Theory Expected Book Name : Book name is Modern Theory
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual author Name: Book Author Norman Expected author Name : Book Author Norman
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual published_year Name: 2025 Expected published_year Name : 2025
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual book_summary Name: Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace. Expected book_summary Name : Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual id Name: 1 Expected id Name : 1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Edit the book</p>
+            <p class="text-sm">
+              <span>5:12:09 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Edit the book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:09 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:09 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Prepared Edit book Record payload: {createdBookId=1, book_summary=Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace., published_year=2025, author=Book author name is Mark, bookName=Book name is Modern Theory}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifies whether the response</p>
+            <p class="text-sm">
+              <span>5:12:09 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifies whether the response</h5>
+<span class='badge badge-success'>06.05.2025 5:12:09 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:09 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual Status Line: HTTP/1.1 200 OK Expected Status Line : HTTP/1.1 200 OK
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify the edited book details values in response</p>
+            <p class="text-sm">
+              <span>5:12:09 pm</span> / <span>00:00:00:701</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verify the edited book details values in response</h5>
+<span class='badge badge-success'>06.05.2025 5:12:09 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:10 pm</span>
+<span class='badge badge-default'>00:00:00:701</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual book Name: Book name is Modern Theory Expected Book Name : Book name is Modern Theory
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual author Name: Book author name is Mark Expected author Name : Book author name is Mark
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:09 pm</td>
+        <td>
+          Actual published_year Name: 2025 Expected published_year Name : 2025
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:10 pm</td>
+        <td>
+          Actual book_summary Name: Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace. Expected book_summary Name : Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:10 pm</td>
+        <td>
+          Actual id Name: 1 Expected id Name : 1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Edit the book</p>
+            <p class="text-sm">
+              <span>5:12:10 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Edit the book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:10 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:10 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:10 pm</td>
+        <td>
+          Prepared Edit book Record payload: {createdBookId=1, book_summary=Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace., published_year=2023, author=Book author name is Mark, bookName=Book name is Modern Theory}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifies whether the response</p>
+            <p class="text-sm">
+              <span>5:12:10 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifies whether the response</h5>
+<span class='badge badge-success'>06.05.2025 5:12:10 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:10 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:10 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:10 pm</td>
+        <td>
+          Actual Status Line: HTTP/1.1 200 OK Expected Status Line : HTTP/1.1 200 OK
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify the edited book details values in response</p>
+            <p class="text-sm">
+              <span>5:12:10 pm</span> / <span>00:00:00:427</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verify the edited book details values in response</h5>
+<span class='badge badge-success'>06.05.2025 5:12:10 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:11 pm</span>
+<span class='badge badge-default'>00:00:00:427</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:10 pm</td>
+        <td>
+          Actual book Name: Book name is Modern Theory Expected Book Name : Book name is Modern Theory
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:10 pm</td>
+        <td>
+          Actual author Name: Book author name is Mark Expected author Name : Book author name is Mark
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:10 pm</td>
+        <td>
+          Actual published_year Name: 2023 Expected published_year Name : 2023
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:10 pm</td>
+        <td>
+          Actual book_summary Name: Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace. Expected book_summary Name : Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual id Name: 1 Expected id Name : 1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Edit the book</p>
+            <p class="text-sm">
+              <span>5:12:11 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Edit the book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:11 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:11 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Prepared Edit book Record payload: {createdBookId=1, book_summary=Book summary is edited now via update, published_year=2023, author=Book author name is Mark, bookName=Book name is Modern Theory}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifies whether the response</p>
+            <p class="text-sm">
+              <span>5:12:11 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifies whether the response</h5>
+<span class='badge badge-success'>06.05.2025 5:12:11 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:11 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual Status Line: HTTP/1.1 200 OK Expected Status Line : HTTP/1.1 200 OK
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify the edited book details values in response</p>
+            <p class="text-sm">
+              <span>5:12:11 pm</span> / <span>00:00:00:302</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verify the edited book details values in response</h5>
+<span class='badge badge-success'>06.05.2025 5:12:11 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:11 pm</span>
+<span class='badge badge-default'>00:00:00:302</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual book Name: Book name is Modern Theory Expected Book Name : Book name is Modern Theory
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual author Name: Book author name is Mark Expected author Name : Book author name is Mark
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual published_year Name: 2023 Expected published_year Name : 2023
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual book_summary Name: Book summary is edited now via update Expected book_summary Name : Book summary is edited now via update
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual id Name: 1 Expected id Name : 1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify the response success</p>
+            <p class="text-sm">
+              <span>5:12:11 pm</span> / <span>00:00:00:557</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify the response success</h5>
+<span class='badge badge-success'>06.05.2025 5:12:11 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-default'>00:00:00:557</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual book Name: Book name is Modern Theory Expected Book Name : Book name is Modern Theory
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual author Name: Book author name is Mark Expected author Name : Book author name is Mark
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual published_year Name: 2023 Expected published_year Name : 2023
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:11 pm</td>
+        <td>
+          Actual book_summary Name: Book summary is edited now via update Expected book_summary Name : Book summary is edited now via update
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Actual id Name: 1 Expected id Name : 1
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">add New book</p>
+            <p class="text-sm">
+              <span>5:12:12 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">add New book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Prepared book Record payload: [{book_summary=Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace., published_year=2025, bookName=Book Title Soldiers Story, author=Book Author Norman}]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register book store with new MobileNumber and email</p>
+            <p class="text-sm">
+              <span>5:12:12 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register book store with new MobileNumber and email</h5>
+<span class='badge badge-success'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=janani237@yahoo.com, password=884MEWHBXNRX56R, Username=null, MobileNumber=6123456789, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether a new user is created with response code and response message</p>
+            <p class="text-sm">
+              <span>5:12:12 pm</span> / <span>00:00:00:025</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether a new user is created with response code and response message</h5>
+<span class='badge badge-success'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-default'>00:00:00:025</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Actual Message: User created successfully Expected Message : User created successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user tries to login to the bookStore</p>
+            <p class="text-sm">
+              <span>5:12:12 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user tries to login to the bookStore</h5>
+<span class='badge badge-success'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether the user has logged in successfully with the response code</p>
+            <p class="text-sm">
+              <span>5:12:12 pm</span> / <span>00:00:00:095</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether the user has logged in successfully with the response code</h5>
+<span class='badge badge-success'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-default'>00:00:00:095</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Token found in response: j4h167963517675385
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Token type found in response: Cloud
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="37"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">add New book</p>
+            <p class="text-sm">
+              <span>5:12:12 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">add New book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Prepared book Record payload: [{book_summary=Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace., published_year=2025, bookName=Book Title Great Leader, author=Book Author Kumar}]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="38"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register book store with new MobileNumber and email</p>
+            <p class="text-sm">
+              <span>5:12:12 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register book store with new MobileNumber and email</h5>
+<span class='badge badge-success'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=Kumar237@yahoo.com, password=36T72G7WDXDXZ6G, Username=null, MobileNumber=7123456789, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="39"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether a new user is created with response code and response message</p>
+            <p class="text-sm">
+              <span>5:12:12 pm</span> / <span>00:00:00:091</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether a new user is created with response code and response message</h5>
+<span class='badge badge-success'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-default'>00:00:00:091</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Actual Message: User created successfully Expected Message : User created successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="40"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user tries to login to the bookStore</p>
+            <p class="text-sm">
+              <span>5:12:12 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user tries to login to the bookStore</h5>
+<span class='badge badge-success'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="41"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether the user has logged in successfully with the response code</p>
+            <p class="text-sm">
+              <span>5:12:12 pm</span> / <span>00:00:00:209</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether the user has logged in successfully with the response code</h5>
+<span class='badge badge-success'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:12 pm</span>
+<span class='badge badge-default'>00:00:00:209</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Token found in response: j4h167963517675385
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:12 pm</td>
+        <td>
+          Token type found in response: Cloud
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="42"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">add New book</p>
+            <p class="text-sm">
+              <span>5:12:13 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">add New book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:13 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:13 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:13 pm</td>
+        <td>
+          Prepared book Record payload: [{book_summary=Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace., published_year=2025, bookName=Book Title Modern Theory, author=Book Author John}]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="43"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register book store with new MobileNumber and email</p>
+            <p class="text-sm">
+              <span>5:12:13 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register book store with new MobileNumber and email</h5>
+<span class='badge badge-success'>06.05.2025 5:12:13 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:13 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:13 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=john237@yahoo.com, password=F2K7R4U7UJ7OJ4O, Username=null, MobileNumber=9123456789, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="44"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether a new user is created with response code and response message</p>
+            <p class="text-sm">
+              <span>5:12:13 pm</span> / <span>00:00:00:048</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether a new user is created with response code and response message</h5>
+<span class='badge badge-success'>06.05.2025 5:12:13 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:13 pm</span>
+<span class='badge badge-default'>00:00:00:048</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:13 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:13 pm</td>
+        <td>
+          Actual Message: User created successfully Expected Message : User created successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="45"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user tries to login to the bookStore</p>
+            <p class="text-sm">
+              <span>5:12:13 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user tries to login to the bookStore</h5>
+<span class='badge badge-success'>06.05.2025 5:12:13 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:13 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="46"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether the user has logged in successfully with the response code</p>
+            <p class="text-sm">
+              <span>5:12:13 pm</span> / <span>00:00:00:669</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether the user has logged in successfully with the response code</h5>
+<span class='badge badge-success'>06.05.2025 5:12:13 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:13 pm</span>
+<span class='badge badge-default'>00:00:00:669</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:13 pm</td>
+        <td>
+          Token found in response: j4h167963517675385
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:13 pm</td>
+        <td>
+          Token type found in response: Cloud
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="47"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify the details of books that listed</p>
+            <p class="text-sm">
+              <span>5:12:13 pm</span> / <span>00:00:01:955</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verify the details of books that listed</h5>
+<span class='badge badge-success'>06.05.2025 5:12:13 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:15 pm</span>
+<span class='badge badge-default'>00:00:01:955</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=47</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:15 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:15 pm</td>
+        <td>
+          Actual Status line: HTTP/1.1 200 OK Expected Status line : HTTP/1.1 200 OK
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:15 pm</td>
+        <td>
+          Actual Json{"Book details":[{"id":"1","name":"Soldiers Story","author":"Norman","published_year":"2025","book_summary":"Book summary"},{"id":"2","name":"Great Leader","author":"Kumar","published_year":"2025","book_summary":"Book summary"},{"id":"3","name":"Modern Theory","author":"John","published_year":"2025","book_summary":"Book summary"}]} Expected json {"Book details":[{"id":"1","name":"Soldiers Story","author":"Norman","published_year":"2025","book_summary":"Book summary"},{"id":"2","name":"Great Leader","author":"Kumar","published_year":"2025","book_summary":"Book summary"},{"id":"3","name":"Modern Theory","author":"John","published_year":"2025","book_summary":"Book summary"}]}
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="48"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">add New book</p>
+            <p class="text-sm">
+              <span>5:12:16 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">add New book</h5>
+<span class='badge badge-success'>06.05.2025 5:12:16 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:16 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=48</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:16 pm</td>
+        <td>
+          Prepared book Record payload: [{book_summary=Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace., published_year=2025, bookName=Book Title Soldiers Story, author=Book Author Norman}]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="49"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register book store with new MobileNumber and email</p>
+            <p class="text-sm">
+              <span>5:12:16 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register book store with new MobileNumber and email</h5>
+<span class='badge badge-success'>06.05.2025 5:12:16 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:16 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=49</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:16 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=janani237@yahoo.com, password=1MGKEMROFXUTAAG, Username=null, MobileNumber=6123456789, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="50"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether a new user is created with response code and response message</p>
+            <p class="text-sm">
+              <span>5:12:16 pm</span> / <span>00:00:00:036</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether a new user is created with response code and response message</h5>
+<span class='badge badge-success'>06.05.2025 5:12:16 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:16 pm</span>
+<span class='badge badge-default'>00:00:00:036</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:16 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:16 pm</td>
+        <td>
+          Actual Message: User created successfully Expected Message : User created successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="51"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user tries to login to the bookStore</p>
+            <p class="text-sm">
+              <span>5:12:16 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user tries to login to the bookStore</h5>
+<span class='badge badge-success'>06.05.2025 5:12:16 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:16 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=51</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="52"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether the user has logged in successfully with the response code</p>
+            <p class="text-sm">
+              <span>5:12:16 pm</span> / <span>00:00:00:124</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether the user has logged in successfully with the response code</h5>
+<span class='badge badge-success'>06.05.2025 5:12:16 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:16 pm</span>
+<span class='badge badge-default'>00:00:00:124</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=52</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:16 pm</td>
+        <td>
+          Token found in response: j4h167963517675385
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:16 pm</td>
+        <td>
+          Token type found in response: Cloud
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="53"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify whether the book is created</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:374</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verify whether the book is created</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:374</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=53</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Id found in response: 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual book Name: Book Title Soldiers Story Expected Book Name : Book Title Soldiers Story
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual author Name: Book Author Norman Expected author Name : Book Author Norman
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual published_year Name: 2025 Expected published_year Name : 2025
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual book_summary Name: Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace. Expected book_summary Name : Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.
+He fought not for glory, but so others could sleep in peace.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="54"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify whether we do not get a correct response</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:000</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verify whether we do not get a correct response</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=54</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Status code: 422 Expected Status code : 422
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Status line: HTTP/1.1 422 Unprocessable Entity Expected Status line : HTTP/1.1 422 Unprocessable Entity
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="55"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register book store with new MobileNumber and email</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register book store with new MobileNumber and email</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=55</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=janani237@yahoo.com, password=YH08HF9OB7FMFAL, Username=null, MobileNumber=6123456789, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="56"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether a new user is created with response code and response message</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:021</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether a new user is created with response code and response message</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:021</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=56</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Message: User created successfully Expected Message : User created successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="57"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register book store with new MobileNumber and email</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register book store with new MobileNumber and email</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=57</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=janani237@yahoo.com, password=IWW7LLI41KD7NHW, Username=null, MobileNumber=6123456789, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="58"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether a new user is created with response code and response message</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:019</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">validate whether a new user is created with response code and response message</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:019</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Status code: 400 Expected Status code : 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Message: Already registered existingUser Expected Message : Email already registered
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="59"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register book store with new MobileNumber and email</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register book store with new MobileNumber and email</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=59</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=janani237@yahoo.com, password=344GH9SHDFJQBB5, Username=null, MobileNumber=6123456789, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="60"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether a new user is created with response code and response message</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:021</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">validate whether a new user is created with response code and response message</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:021</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=60</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Status code: 400 Expected Status code : 400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Message: Already registered existingPassword Expected Message : Email already registered
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="61"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register book store with new MobileNumber and email</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register book store with new MobileNumber and email</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=61</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=janani237@yahoo.com, password=8LODOHZGDJE7F3M, Username=null, MobileNumber=6123456789, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="62"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether a new user is created with response code and response message</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:019</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether a new user is created with response code and response message</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:019</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=62</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Message: User created successfully Expected Message : User created successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="63"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register book store with new MobileNumber and email</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:001</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register book store with new MobileNumber and email</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=63</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=janani237@yahoo.com, password=C2U7VE4FLT0DSNN, Username=null, MobileNumber=6123456789, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="64"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether a new user is created with response code and response message</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:037</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether a new user is created with response code and response message</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:037</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=64</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Status code: 200 Expected Status code : 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Message: User created successfully Expected Message : User created successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="65"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user tries to login to the bookStore</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user tries to login to the bookStore</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=65</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="66"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether the user has logged in successfully with the response code</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:049</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">validate whether the user has logged in successfully with the response code</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:049</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=66</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Token found in response: j4h167963517675385
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Token type found in response: Cloud
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="67"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user tries to login to the bookStore</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user tries to login to the bookStore</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=67</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=CP16NZVLOR@yahoo.com, password=TI9RJIYA, Username=noRegisterUser, MobileNumber=null, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="68"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether the user has logged in successfully with the response code</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:043</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">validate whether the user has logged in successfully with the response code</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:043</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=68</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Status Line: HTTP/1.1 400 Bad Request Expected Status Line : HTTP/1.1 400 Bad Request
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Actual Message: Incorrect email or password Expected Message : Incorrect error message in detail mismatch
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="69"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">user tries to login to the bookStore</p>
+            <p class="text-sm">
+              <span>5:12:17 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">user tries to login to the bookStore</h5>
+<span class='badge badge-success'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:17 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=69</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:12:17 pm</td>
+        <td>
+          Prepared Register user payload: UserDetailsBookStoreData(email=null, password=null, Username=missingParam, MobileNumber=null, RegisterResponse=null, loginResponse=null, accessToken=null, addBookResponse=null, editBookResponse=null, getbookRecordByIdResponse=null, deleteBookResponse=null, fetchAllBooks=null)
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="70"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validate whether the user has logged in successfully with the response code</p>
+            <p class="text-sm">
+              <span>5:12:18 pm</span> / <span>00:00:00:095</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">validate whether the user has logged in successfully with the response code</h5>
+<span class='badge badge-success'>06.05.2025 5:12:18 pm</span>
+<span class='badge badge-danger'>06.05.2025 5:12:18 pm</span>
+<span class='badge badge-default'>00:00:00:095</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=70</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:18 pm</td>
+        <td>
+          Actual Status Line: HTTP/1.1 422 Unprocessable Entity Expected Status Line : HTTP/1.1 422 Unprocessable Entity
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:12:18 pm</td>
+        <td>
+          Actual Message: Required field missingParam Expected Message : Required field missingParam
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jun 5, 2025 05:12:00 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jun 5, 2025 05:12:18 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>64</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>6</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='91%'>
+<b>64</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='8%'><b>6</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='72%'><b>98</b> events passed</small></div>
+<div>
+<small data-tooltip='9%'><b>13</b> events failed,
+<b data-tooltip='%'>24</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"add New book":0.006,"Register book store with new MobileNumber and email":0.014,"validate whether a new user is created with response code and response message":2.564,"user tries to login to the bookStore":0,"validate whether the user has logged in successfully with the response code":0.219,"verify whether the book is created":0.438,"Edit the book":0,"verifies whether the response":0.004,"verify the edited book details values in response":0.729,"Verify the response success":0.27,"verify the response after deleting the book":0.026,"verify the response after deleting the book":0.027,"add New book":0,"Register book store with new MobileNumber and email":0.001,"validate whether a new user is created with response code and response message":0.046,"user tries to login to the bookStore":0,"validate whether the user has logged in successfully with the response code":0.092,"verify whether the book is created":0.315,"Edit the book":0,"verifies whether the response":0.001,"verify the edited book details values in response":0.335,"Edit the book":0,"verifies whether the response":0,"verify the edited book details values in response":0.701,"Edit the book":0,"verifies whether the response":0.001,"verify the edited book details values in response":0.427,"Edit the book":0.001,"verifies whether the response":0,"verify the edited book details values in response":0.302,"Verify the response success":0.557,"add New book":0,"Register book store with new MobileNumber and email":0.001,"validate whether a new user is created with response code and response message":0.025,"user tries to login to the bookStore":0,"validate whether the user has logged in successfully with the response code":0.095,"add New book":0,"Register book store with new MobileNumber and email":0,"validate whether a new user is created with response code and response message":0.091,"user tries to login to the bookStore":0,"validate whether the user has logged in successfully with the response code":0.209,"add New book":0,"Register book store with new MobileNumber and email":0.001,"validate whether a new user is created with response code and response message":0.048,"user tries to login to the bookStore":0,"validate whether the user has logged in successfully with the response code":0.669,"verify the details of books that listed":1.955,"add New book":0,"Register book store with new MobileNumber and email":0,"validate whether a new user is created with response code and response message":0.036,"user tries to login to the bookStore":0,"validate whether the user has logged in successfully with the response code":0.124,"verify whether the book is created":0.374,"verify whether we do not get a correct response":0,"Register book store with new MobileNumber and email":0.001,"validate whether a new user is created with response code and response message":0.021,"Register book store with new MobileNumber and email":0,"validate whether a new user is created with response code and response message":0.019,"Register book store with new MobileNumber and email":0.001,"validate whether a new user is created with response code and response message":0.021,"Register book store with new MobileNumber and email":0.001,"validate whether a new user is created with response code and response message":0.019,"Register book store with new MobileNumber and email":0.001,"validate whether a new user is created with response code and response message":0.037,"user tries to login to the bookStore":0,"validate whether the user has logged in successfully with the response code":0.049,"user tries to login to the bookStore":0,"validate whether the user has logged in successfully with the response code":0.043,"user tries to login to the bookStore":0,"validate whether the user has logged in successfully with the response code":0.095
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 64,
+failParent: 6,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 98,
+failEvents: 13,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 24
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

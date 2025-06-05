@@ -12,7 +12,7 @@ public class ExtentReportUtil {
 
     public static void initReports() {
         if (extent == null) {
-            ExtentSparkReporter reporter = new ExtentSparkReporter("target/ExtentReport.html");
+            ExtentSparkReporter reporter = new ExtentSparkReporter("Report/ExtentReport.html");
             extent = new ExtentReports();
             extent.attachReporter(reporter);
         }

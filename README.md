@@ -73,7 +73,7 @@ Feature Area	Scenario
 5. **View Reports**:
    - Once test execution completes, **ExtentReports** will be generated at:
      ```
-     test-output/ExtentReport/Extent.html
+     Report/ExtentReport.html
      ```
    - Open the HTML report in your browser to view test execution results.
 

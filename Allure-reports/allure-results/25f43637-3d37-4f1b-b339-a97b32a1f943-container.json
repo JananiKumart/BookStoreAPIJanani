@@ -1,1 +1,0 @@
-{"uuid":"25f43637-3d37-4f1b-b339-a97b32a1f943","name":"Scenario: To fetch all the books details","children":["02364a1e-a2c5-4f12-9ba2-5716d5315475"],"befores":[{"name":"Hooks.CucumberHooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1749120829891,"stop":1749120829891}],"afters":[],"start":1749120829890,"stop":1749120830840}
