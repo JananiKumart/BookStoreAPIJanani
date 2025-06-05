@@ -166,13 +166,13 @@ public class UserFlowSteps {
 
         } else if (condition.equalsIgnoreCase("notFound")) {
             Assert.assertEquals(userDetailsBookStoreData.getDeleteBookResponse().getStatusCode(), 404, "The response code is not 404");
-            ExtentReportUtil.logFail("Actual Status code: " + userDetailsBookStoreData.getDeleteBookResponse().getStatusCode() + " Expected Status code : "+ 404);
+            ExtentReportUtil.logPass("Actual Status code: " + userDetailsBookStoreData.getDeleteBookResponse().getStatusCode() + " Expected Status code : "+ 404);
 
             Assert.assertEquals(userDetailsBookStoreData.getDeleteBookResponse().getStatusLine(), "HTTP/1.1 404 Not Found", "Response line is not as expected");
-            ExtentReportUtil.logFail("Actual Status Line: " + userDetailsBookStoreData.getDeleteBookResponse().getStatusLine() + " Expected Status Line : "+ "HTTP/1.1 404 Not Found");
+            ExtentReportUtil.logPass("Actual Status Line: " + userDetailsBookStoreData.getDeleteBookResponse().getStatusLine() + " Expected Status Line : "+ "HTTP/1.1 404 Not Found");
 
             Assert.assertEquals(userDetailsBookStoreData.getDeleteBookResponse().getBody().jsonPath().get("message"), "Book not found", "Book should not be deleted");
-            ExtentReportUtil.logFail("Actual error message: " + userDetailsBookStoreData.getDeleteBookResponse().getBody().jsonPath().get("message") + " Expected error message: "+ "Book not found");
+            ExtentReportUtil.logPass("Actual error message: " + userDetailsBookStoreData.getDeleteBookResponse().getBody().jsonPath().get("message") + " Expected error message: "+ "Book not found");
 
         }
 
@@ -209,9 +209,9 @@ public class UserFlowSteps {
     public void verifyWhetherWeDoNotGetACorrectResponse() {
         ExtentReportUtil.test = ExtentReportUtil.extent.createTest("verify whether we do not get a correct response");
         Assert.assertEquals(userDetailsBookStoreData.getGetbookRecordByIdResponse().getStatusCode(), 422);
-        ExtentReportUtil.logFail("Actual Status code: " + userDetailsBookStoreData.getGetbookRecordByIdResponse().getStatusCode() + " Expected Status code : "+ 422);
+        ExtentReportUtil.logPass("Actual Status code: " + userDetailsBookStoreData.getGetbookRecordByIdResponse().getStatusCode() + " Expected Status code : "+ 422);
         Assert.assertEquals(userDetailsBookStoreData.getGetbookRecordByIdResponse().getStatusLine(), "HTTP/1.1 422 Unprocessable Entity");
-        ExtentReportUtil.logFail("Actual Status line: " + userDetailsBookStoreData.getGetbookRecordByIdResponse().getStatusLine() + " Expected Status line : "+ "HTTP/1.1 422 Unprocessable Entity");
+        ExtentReportUtil.logPass("Actual Status line: " + userDetailsBookStoreData.getGetbookRecordByIdResponse().getStatusLine() + " Expected Status line : "+ "HTTP/1.1 422 Unprocessable Entity");
 
     }
 
@@ -247,8 +247,8 @@ public class UserFlowSteps {
 
         } else if (statusCode == 400) {
             Assert.assertEquals(message, userDetailsBookStoreData.getRegisterResponse().getBody().jsonPath().get("message").toString(), "Email already registered");
-            ExtentReportUtil.logFail("Actual Status code: " + userDetailsBookStoreData.getRegisterResponse().getStatusCode() + " Expected Status code : "+ statusCode);
-            ExtentReportUtil.logFail("Actual Message: " + userDetailsBookStoreData.getRegisterResponse().getBody().jsonPath().get("message").toString() + " Expected Message : "+ "Email already registered");
+            ExtentReportUtil.logPass("Actual Status code: " + userDetailsBookStoreData.getRegisterResponse().getStatusCode() + " Expected Status code : "+ statusCode);
+            ExtentReportUtil.logPass("Actual Message: " + userDetailsBookStoreData.getRegisterResponse().getBody().jsonPath().get("message").toString() + " Expected Message : "+ "Email already registered");
         }
     }
 
@@ -295,15 +295,15 @@ public class UserFlowSteps {
             case "incorrectCredentials":
                 Assert.assertEquals(userDetailsBookStoreData.getLoginResponse().getStatusLine(), "HTTP/1.1 400 Bad Request", "Response line is not as expected");
                 Assert.assertEquals(userDetailsBookStoreData.getLoginResponse().jsonPath().get("message"), "Incorrect email or password", "Incorrect error message in detail mismatch");
-                ExtentReportUtil.logFail("Actual Status Line: " + userDetailsBookStoreData.getLoginResponse().getStatusLine() + " Expected Status Line : "+ "HTTP/1.1 400 Bad Request");
-                ExtentReportUtil.logFail("Actual Message: " + userDetailsBookStoreData.getLoginResponse().jsonPath().get("message") + " Expected Message : "+ "Incorrect error message in detail mismatch");
+                ExtentReportUtil.logPass("Actual Status Line: " + userDetailsBookStoreData.getLoginResponse().getStatusLine() + " Expected Status Line : "+ "HTTP/1.1 400 Bad Request");
+                ExtentReportUtil.logPass("Actual Message: " + userDetailsBookStoreData.getLoginResponse().jsonPath().get("message") + " Expected Message : "+ "Incorrect error message in detail mismatch");
                 break;
 
             case "missingParam":
                 Assert.assertEquals(userDetailsBookStoreData.getLoginResponse().getStatusLine(), "HTTP/1.1 422 Unprocessable Entity", "Response line is not as expected");
                 Assert.assertEquals(userDetailsBookStoreData.getLoginResponse().jsonPath().get("message"), "Required field missingParam", "Incorrect error message in detail mismatch");
-                ExtentReportUtil.logFail("Actual Status Line: " + userDetailsBookStoreData.getLoginResponse().getStatusLine() + " Expected Status Line : "+ "HTTP/1.1 422 Unprocessable Entity");
-                ExtentReportUtil.logFail("Actual Message: " + userDetailsBookStoreData.getLoginResponse().jsonPath().get("message") + " Expected Message : "+ "Required field missingParam");
+                ExtentReportUtil.logPass("Actual Status Line: " + userDetailsBookStoreData.getLoginResponse().getStatusLine() + " Expected Status Line : "+ "HTTP/1.1 422 Unprocessable Entity");
+                ExtentReportUtil.logPass("Actual Message: " + userDetailsBookStoreData.getLoginResponse().jsonPath().get("message") + " Expected Message : "+ "Required field missingParam");
                 break;
 
         }
