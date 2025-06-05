@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/BookStoreAPI.git'
+                git 'https://github.com/JananiKumart/BookStoreAPIJanani.git'
             }
         }
         stage('Build') {

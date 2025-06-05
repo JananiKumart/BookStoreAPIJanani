@@ -38,12 +38,4 @@ public class ExtentReportUtil {
         test = extent.createTest(testName);
     }
 
-    
-    public static void logValidation(String title, Object expected, Object actual, String expectedDesc, String actualDesc, boolean pass) {
-        if (pass) {
-            test.pass("✅ " + title + "\nExpected: " + expected + " - " + expectedDesc + "\nActual: " + actual + " - " + actualDesc);
-        } else {
-            test.fail("❌ " + title + "\nExpected: " + expected + " - " + expectedDesc + "\nActual: " + actual + " - " + actualDesc);
-        }
-    }
 }

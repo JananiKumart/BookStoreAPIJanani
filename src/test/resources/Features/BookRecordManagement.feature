@@ -1,8 +1,8 @@
-@BookStoreManagement @regression
+@BookStoreManagement @Regression
 Feature: To validate the bookstore by adding , updating, fetching all books and deleting them from the store with the help of user authentication
 
   @CRUDOperations @Sanity
-  Scenario Outline:To create,update ,fetch book by id and finally delete the book in the book store with Register and login to the book store with a new user
+  Scenario Outline: Create, fetch, update, and delete a book in the book store using registered user credentials
     Given Adding the new book into the store after successful login of user into the system Book Name <bookName> and <author>
     And Register book store with new MobileNumber <mobileNumber> and email <email> and password
     When user tries to Register the store with newUser
@@ -16,6 +16,7 @@ Feature: To validate the bookstore by adding , updating, fetching all books and 
 
     When user tries to edit the book with the name
     And I hit the Book endpoint "EditBookId" with "PUT" Method
+
     Then verifies whether the response is 200
     And verify the edited book details values in response for editing name
 
@@ -30,8 +31,8 @@ Feature: To validate the bookstore by adding , updating, fetching all books and 
       | mobileNumber | email        | bookName         | author   |
       | "6123456789" | "janani237@" | "Soldiers Story" | "Norman" |
 
-  @EditBooksScenario @regression
-  Scenario Outline: User will validate the api by editing all the field of the book
+  @EditTheBooksScenario @Regression
+  Scenario Outline: Edit all fields of a book and validate each update
     Given Adding the new book into the store after successful login of user into the system Book Name <bookName> and <author>
     And Register book store with new MobileNumber <mobileNumber> and email <email> and password
     When user tries to Register the store with newUser
@@ -72,8 +73,8 @@ Feature: To validate the bookstore by adding , updating, fetching all books and 
       | mobileNumber | email        | bookName         | author   |
       | "6123456789" | "janani237@" | "Soldiers Story" | "Norman" |
 
-  @MultipleBooks @regression
-  Scenario Outline: Validate the fetch api by adding multiple books and check whether we are able to fetch the books
+  @MultipleBooks @Regression
+  Scenario Outline: Add multiple books and validate that they are fetched successfully
     Given Adding the new book into the store after successful login of user into the system Book Name <bookName> and <author>
     And Register book store with new MobileNumber <mobileNumber> and email <email> and password
     When user tries to Register the store with newUser
@@ -90,13 +91,13 @@ Feature: To validate the bookstore by adding , updating, fetching all books and 
       | "7123456789" | "Kumar237@"  | "Great Leader"   | "Kumar"  |
       | "9123456789" | "john237@"   | "Modern Theory"  | "John"   |
 
-  @FetchAllBook @regression
-  Scenario: To fetch all the books details
+  @FetchAllBook @Regression
+  Scenario: Fetch all books from the book store
     When fetch all the books that added to the book store hit the login endpoint "GetAllBooks" with "Get" Method
     Then verify the details of books that listed
 
-  @FetchBookWithInvalidId @regression @aj
-  Scenario Outline: To check whether we are not able to get the book if the bookID is wrong
+  @FetchBookWithInvalidId @Regression
+  Scenario Outline: Attempt to fetch a book with an invalid book ID
     Given Adding the new book into the store after successful login of user into the system Book Name <bookName> and <author>
     And Register book store with new MobileNumber <mobileNumber> and email <email> and password
     When user tries to Register the store with newUser

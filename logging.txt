@@ -13,7 +13,7 @@ Body:
 {
     "username": "newUser",
     "email": "janani237@yahoo.com",
-    "password": "3H1C3HIZDB82NME",
+    "password": "Z0HJEL3VROC0764",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -41,7 +41,7 @@ Body:
 {
     "username": "newUser",
     "email": "janani237@yahoo.com",
-    "password": "3H1C3HIZDB82NME",
+    "password": "Z0HJEL3VROC0764",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -210,7 +210,7 @@ Body:
 {
     "username": "newUser",
     "email": "janani237@yahoo.com",
-    "password": "PFPZH00TQAROFOM",
+    "password": "TQGZ61WK4WFPGLI",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -238,7 +238,7 @@ Body:
 {
     "username": "newUser",
     "email": "janani237@yahoo.com",
-    "password": "PFPZH00TQAROFOM",
+    "password": "TQGZ61WK4WFPGLI",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -465,7 +465,7 @@ Body:
 {
     "username": "newUser",
     "email": "janani237@yahoo.com",
-    "password": "HALCTWBLGQ1S99S",
+    "password": "C4P889F4NOYXXSE",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -493,7 +493,7 @@ Body:
 {
     "username": "newUser",
     "email": "janani237@yahoo.com",
-    "password": "HALCTWBLGQ1S99S",
+    "password": "C4P889F4NOYXXSE",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -556,7 +556,7 @@ Body:
 {
     "username": "newUser",
     "email": "Kumar237@yahoo.com",
-    "password": "0Z4AGJ49JGOGEK2",
+    "password": "VHZZTRFH56EJ8F2",
     "mobile": "7123456789"
 }
 HTTP/1.1 200 OK
@@ -584,7 +584,7 @@ Body:
 {
     "username": "newUser",
     "email": "Kumar237@yahoo.com",
-    "password": "0Z4AGJ49JGOGEK2",
+    "password": "VHZZTRFH56EJ8F2",
     "mobile": "7123456789"
 }
 HTTP/1.1 200 OK
@@ -647,7 +647,7 @@ Body:
 {
     "username": "newUser",
     "email": "john237@yahoo.com",
-    "password": "Q1MNYK6JNA7C33J",
+    "password": "DNG9V0VQ25BROMW",
     "mobile": "9123456789"
 }
 HTTP/1.1 200 OK
@@ -675,7 +675,7 @@ Body:
 {
     "username": "newUser",
     "email": "john237@yahoo.com",
-    "password": "Q1MNYK6JNA7C33J",
+    "password": "DNG9V0VQ25BROMW",
     "mobile": "9123456789"
 }
 HTTP/1.1 200 OK
@@ -782,7 +782,7 @@ Body:
 {
     "username": "newUser",
     "email": "janani237@yahoo.com",
-    "password": "Z1LXTIBZMBPABXV",
+    "password": "84UPV44IH8GDC93",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -810,7 +810,7 @@ Body:
 {
     "username": "newUser",
     "email": "janani237@yahoo.com",
-    "password": "Z1LXTIBZMBPABXV",
+    "password": "84UPV44IH8GDC93",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -894,7 +894,7 @@ Body:
 {
     "username": "newUser",
     "email": "janani237@yahoo.com",
-    "password": "5RA2J4C8K813V1X",
+    "password": "5HJ2VFK7IU8DF5D",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -922,7 +922,7 @@ Body:
 {
     "username": "existingUser",
     "email": "janani237@yahoo.com",
-    "password": "5JIRSVYOGRF9SXK",
+    "password": "4M7KHF1PI54RWKV",
     "mobile": "6123456789"
 }
 HTTP/1.1 400 Bad Request
@@ -948,7 +948,7 @@ Body:
 {
     "username": "existingPassword",
     "email": "janani237@yahoo.com",
-    "password": "0B8N3OUB8HITGTR",
+    "password": "6JPQXAQWK719NSX",
     "mobile": "6123456789"
 }
 HTTP/1.1 400 Bad Request
@@ -974,7 +974,7 @@ Body:
 {
     "username": "email credentials",
     "email": "janani237@yahoo.com",
-    "password": "AJUFZY7Z68OIIR8",
+    "password": "J6RQDH8PXTTDLMA",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -1002,7 +1002,7 @@ Body:
 {
     "username": "newUser",
     "email": "janani237@yahoo.com",
-    "password": "L15RW1YVMZ9BN21",
+    "password": "SJSZ8UBIWRPMMSQ",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -1030,7 +1030,7 @@ Body:
 {
     "username": "newUser",
     "email": "janani237@yahoo.com",
-    "password": "L15RW1YVMZ9BN21",
+    "password": "SJSZ8UBIWRPMMSQ",
     "mobile": "6123456789"
 }
 HTTP/1.1 200 OK
@@ -1058,8 +1058,8 @@ Multiparts:		<none>
 Body:
 {
     "username": "noRegisterUser",
-    "email": "NLMKF4VBZ4@yahoo.com",
-    "password": "MCDTHJKS",
+    "email": "FMP8230L4L@yahoo.com",
+    "password": "5UR29BO7",
     "mobile": "null"
 }
 HTTP/1.1 400 Bad Request

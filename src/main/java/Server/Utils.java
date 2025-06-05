@@ -31,37 +31,6 @@ public class Utils {
 		}
 		return req;		
 	}
-	
-	
-	public static String getGlobalValue(String key) throws IOException
-	{
-		Properties prop =new Properties();
-		FileInputStream fis =new FileInputStream("src\\test\\java\\resources\\global.properties");
-		prop.load(fis);
-		return prop.getProperty(key);
-	
-		
-		
-	}
-	
-	
-	public String getJsonPath(Response response,String key)
-	{
-		  String resp=response.asString();
-		JsonPath   js = new JsonPath(resp);
-		return js.get(key).toString();
-	}
-	
-	public void getexcel()
-	{
-		
-		//mobile = BaseclassAPIcucumber.readValueFromExcelSheet2().get(3).get("Male");
-		 
-	}
 
-
-	public static NumberFormatException forInputString(String he1) {
-		  return new NumberFormatException("For input string: \"" + he1 + "\"");
-	}
 	
 }
