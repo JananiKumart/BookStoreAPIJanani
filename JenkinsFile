@@ -1,0 +1,44 @@
+pipeline {
+    agent any
+    tools {
+        maven 'Maven 3.8.5'
+        jdk 'Java 21'
+    }
+    environment {
+        ENV = "${params.TEST_ENV ?: 'dev'}"
+    }
+    parameters {
+        string(name: 'TEST_ENV', defaultValue: 'dev', description: 'Environment to run tests')
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/your-repo/BookStoreAPI.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'mvn clean compile'
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                sh "mvn test -Denv=${ENV}"
+            }
+        }
+        stage('Publish Report') {
+            steps {
+                publishHTML(target: [
+                    reportDir: 'test-output/ExtentReport',
+                    reportFiles: 'Extent.html',
+                    reportName: 'Test Report'
+                ])
+            }
+        }
+    }
+    post {
+        always {
+            junit 'target/surefire-reports/*.xml'
+        }
+    }
+}

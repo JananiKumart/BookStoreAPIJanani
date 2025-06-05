@@ -1,0 +1,22 @@
+{"Book details":[{
+  "id": "1",
+  "name": "Soldiers Story",
+  "author":"Norman",
+  "published_year":"2025",
+  "book_summary":"Book summary"
+},
+  {
+    "id": "2",
+    "name": "Great Leader",
+    "author":"Kumar",
+    "published_year":"2025",
+    "book_summary":"Book summary"
+  },
+  {
+    "id": "3",
+    "name": "Modern Theory",
+    "author":"John",
+    "published_year":"2025",
+    "book_summary":"Book summary"
+  }
+]}

@@ -1,0 +1,1098 @@
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "janani237@yahoo.com",
+    "password": "3H1C3HIZDB82NME",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: c1dc5902-b4ba-4403-8d8e-558bfbbe4273
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "message": "User created successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "janani237@yahoo.com",
+    "password": "3H1C3HIZDB82NME",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9edeb980-7a9e-435e-b710-a78598627aeb
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "access_token": "j4h167963517675385",
+    "token_type": "Cloud"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/books/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book Title Soldiers Story",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace."
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9d75d3f4-6920-4c0d-aa37-9cc9b4a1234a
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book Title Soldiers Story",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace.",
+    "message": "Add book record successfully"
+}
+Request method:	PUT
+Request URI:	http://127.0.0.1:8000/books/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book name is Modern Theory",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace."
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 3a3b8d97-f2c9-48e1-8db6-ed9618471618
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book name is Modern Theory",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace.",
+    "message": "Edit book record successfully"
+}
+Request method:	GET
+Request URI:	http://127.0.0.1:8000/books/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 46fdde50-9f24-4151-81c6-d0f269c4ce33
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book name is Modern Theory",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace.",
+    "message": "Get book record successfully"
+}
+Request method:	DELETE
+Request URI:	http://127.0.0.1:8000/books/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 6cc59ba3-085a-4192-b64f-1be5c4c76d12
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "message": "Book deleted successfully"
+}
+Request method:	DELETE
+Request URI:	http://127.0.0.1:8000/books/NotFound
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Matched-Stub-Id: 889920a8-2016-4560-b15f-d0055784d861
+Transfer-Encoding: chunked
+
+{
+    "message": "Book not found"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "janani237@yahoo.com",
+    "password": "PFPZH00TQAROFOM",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: c1dc5902-b4ba-4403-8d8e-558bfbbe4273
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "message": "User created successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "janani237@yahoo.com",
+    "password": "PFPZH00TQAROFOM",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9edeb980-7a9e-435e-b710-a78598627aeb
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "access_token": "j4h167963517675385",
+    "token_type": "Cloud"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/books/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book Title Soldiers Story",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace."
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9d75d3f4-6920-4c0d-aa37-9cc9b4a1234a
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book Title Soldiers Story",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace.",
+    "message": "Add book record successfully"
+}
+Request method:	PUT
+Request URI:	http://127.0.0.1:8000/books/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book name is Modern Theory",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace."
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 3a3b8d97-f2c9-48e1-8db6-ed9618471618
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book name is Modern Theory",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace.",
+    "message": "Edit book record successfully"
+}
+Request method:	PUT
+Request URI:	http://127.0.0.1:8000/books/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book name is Modern Theory",
+    "author": "Book author name is Mark",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace."
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: e5946a57-66a0-40ab-b07d-806467e69845
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book name is Modern Theory",
+    "author": "Book author name is Mark",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace.",
+    "message": "Edit book record successfully"
+}
+Request method:	PUT
+Request URI:	http://127.0.0.1:8000/books/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book name is Modern Theory",
+    "author": "Book author name is Mark",
+    "published_year": "2023",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace."
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 3983fdae-ac7d-4fd3-8bb8-a0a6c336298c
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book name is Modern Theory",
+    "author": "Book author name is Mark",
+    "published_year": "2023",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace.",
+    "message": "Edit book record successfully"
+}
+Request method:	PUT
+Request URI:	http://127.0.0.1:8000/books/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book name is Modern Theory",
+    "author": "Book author name is Mark",
+    "published_year": "2023",
+    "book_summary": "Book summary is edited now via update"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 6b19fe09-8282-4f5d-b847-83f63e330a42
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book name is Modern Theory",
+    "author": "Book author name is Mark",
+    "published_year": "2023",
+    "book_summary": "Book summary is edited now via update",
+    "message": "Edit book record successfully"
+}
+Request method:	GET
+Request URI:	http://127.0.0.1:8000/editedBooks/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 670b4eba-5686-4650-9909-c048b4696572
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book name is Modern Theory",
+    "author": "Book author name is Mark",
+    "published_year": "2023",
+    "book_summary": "Book summary is edited now via update",
+    "message": "Edit book record successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "janani237@yahoo.com",
+    "password": "HALCTWBLGQ1S99S",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: c1dc5902-b4ba-4403-8d8e-558bfbbe4273
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "message": "User created successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "janani237@yahoo.com",
+    "password": "HALCTWBLGQ1S99S",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9edeb980-7a9e-435e-b710-a78598627aeb
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "access_token": "j4h167963517675385",
+    "token_type": "Cloud"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/books/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book Title Soldiers Story",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace."
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9d75d3f4-6920-4c0d-aa37-9cc9b4a1234a
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book Title Soldiers Story",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace.",
+    "message": "Add book record successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "Kumar237@yahoo.com",
+    "password": "0Z4AGJ49JGOGEK2",
+    "mobile": "7123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: c1dc5902-b4ba-4403-8d8e-558bfbbe4273
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "message": "User created successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "Kumar237@yahoo.com",
+    "password": "0Z4AGJ49JGOGEK2",
+    "mobile": "7123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9edeb980-7a9e-435e-b710-a78598627aeb
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "access_token": "j4h167963517675385",
+    "token_type": "Cloud"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/books/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book Title Great Leader",
+    "author": "Book Author Kumar",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace."
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9d75d3f4-6920-4c0d-aa37-9cc9b4a1234a
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book Title Soldiers Story",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace.",
+    "message": "Add book record successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "john237@yahoo.com",
+    "password": "Q1MNYK6JNA7C33J",
+    "mobile": "9123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: c1dc5902-b4ba-4403-8d8e-558bfbbe4273
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "message": "User created successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "john237@yahoo.com",
+    "password": "Q1MNYK6JNA7C33J",
+    "mobile": "9123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9edeb980-7a9e-435e-b710-a78598627aeb
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "access_token": "j4h167963517675385",
+    "token_type": "Cloud"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/books/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book Title Modern Theory",
+    "author": "Book Author John",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace."
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9d75d3f4-6920-4c0d-aa37-9cc9b4a1234a
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book Title Soldiers Story",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace.",
+    "message": "Add book record successfully"
+}
+Request method:	GET
+Request URI:	http://127.0.0.1:8000/AllBooks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 25e44d93-df43-4edc-b44d-de24b84f4e88
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "Book details": [
+        {
+            "id": "1",
+            "name": "Soldiers Story",
+            "author": "Norman",
+            "published_year": "2025",
+            "book_summary": "Book summary"
+        },
+        {
+            "id": "2",
+            "name": "Great Leader",
+            "author": "Kumar",
+            "published_year": "2025",
+            "book_summary": "Book summary"
+        },
+        {
+            "id": "3",
+            "name": "Modern Theory",
+            "author": "John",
+            "published_year": "2025",
+            "book_summary": "Book summary"
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "janani237@yahoo.com",
+    "password": "Z1LXTIBZMBPABXV",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: c1dc5902-b4ba-4403-8d8e-558bfbbe4273
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "message": "User created successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "janani237@yahoo.com",
+    "password": "Z1LXTIBZMBPABXV",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9edeb980-7a9e-435e-b710-a78598627aeb
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "access_token": "j4h167963517675385",
+    "token_type": "Cloud"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/books/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Book Title Soldiers Story",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace."
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9d75d3f4-6920-4c0d-aa37-9cc9b4a1234a
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "id": "1",
+    "name": "Book Title Soldiers Story",
+    "author": "Book Author Norman",
+    "published_year": "2025",
+    "book_summary": "Book summary for the book A lone soldier stood guard through the storm, eyes fixed on the silent horizon.\nHe fought not for glory, but so others could sleep in peace.",
+    "message": "Add book record successfully"
+}
+Request method:	GET
+Request URI:	http://127.0.0.1:8000/InvalidBooks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer j4h167963517675385
+				Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+HTTP/1.1 422 Unprocessable Entity
+Content-Type: application/json
+Matched-Stub-Id: 689c0831-0a37-4447-89fa-c4e49ba59754
+Transfer-Encoding: chunked
+
+{
+    "message": "Invalid Book Record"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "janani237@yahoo.com",
+    "password": "5RA2J4C8K813V1X",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: c1dc5902-b4ba-4403-8d8e-558bfbbe4273
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "message": "User created successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "existingUser",
+    "email": "janani237@yahoo.com",
+    "password": "5JIRSVYOGRF9SXK",
+    "mobile": "6123456789"
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: af414044-504c-4a46-b573-90218a6115cd
+Transfer-Encoding: chunked
+
+{
+    "message": "Already registered existingUser"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "existingPassword",
+    "email": "janani237@yahoo.com",
+    "password": "0B8N3OUB8HITGTR",
+    "mobile": "6123456789"
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: 01de53d0-ca1c-4593-b5a3-e48fe44ff62a
+Transfer-Encoding: chunked
+
+{
+    "message": "Already registered existingPassword"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "email credentials",
+    "email": "janani237@yahoo.com",
+    "password": "AJUFZY7Z68OIIR8",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 627b7e4a-a3e6-4d6e-9579-562b54789b68
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "message": "User created successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "janani237@yahoo.com",
+    "password": "L15RW1YVMZ9BN21",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: c1dc5902-b4ba-4403-8d8e-558bfbbe4273
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "message": "User created successfully"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "newUser",
+    "email": "janani237@yahoo.com",
+    "password": "L15RW1YVMZ9BN21",
+    "mobile": "6123456789"
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Matched-Stub-Id: 9edeb980-7a9e-435e-b710-a78598627aeb
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "access_token": "j4h167963517675385",
+    "token_type": "Cloud"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "noRegisterUser",
+    "email": "NLMKF4VBZ4@yahoo.com",
+    "password": "MCDTHJKS",
+    "mobile": "null"
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: f3bb446e-bd49-45ee-8ca9-a47327a1b59b
+Transfer-Encoding: chunked
+
+{
+    "message": "Incorrect email or password"
+}
+Request method:	POST
+Request URI:	http://127.0.0.1:8000/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json;charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "missingParam",
+    "email": "null",
+    "password": "null",
+    "mobile": "null"
+}
+HTTP/1.1 422 Unprocessable Entity
+Content-Type: application/json
+Matched-Stub-Id: 2683db1b-7925-4124-9588-64671ff52420
+Transfer-Encoding: chunked
+
+{
+    "message": "Required field missingParam"
+}
